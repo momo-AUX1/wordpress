@@ -23,7 +23,6 @@ if (isset($_GET['user'])) {
   if (is_numeric($_GET['user'])) {
     $user_id = intval($_GET['user']);
   } else {
-    // Recherche de l'utilisateur par slug si l'ID n'est pas numérique
     $found_user = get_user_by('slug', sanitize_text_field($_GET['user']));
     if ($found_user) {
       $user_id = $found_user->ID;
