@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FCE4EC;
+  font-family: 'Roboto', sans-serif;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #F48FB1;
+  color: #FFF;
+  padding: 0.75rem 1rem;
+}
+
+.top-header .back-button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.top-header h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 500;
+  flex: 1;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.app-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+  background-color: #FCE4EC;
+}
+
+.app-info-text {
+  flex: 1;
+}
+
+.app-info-text h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #4A148C;
+  font-weight: 500;
+}
+
+.app-lang {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+.app-download-btn {
+  margin-top: 0.75rem;
+  --md-sys-color-primary: #D81B60;
+}
+
+.published-info {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.published-info a.author-link {
+  text-decoration: underline;
+  color: #F48FB1;
+  font-weight: 500;
+}
+
+.app-content {
+  margin-bottom: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+#comments {
+  margin-top: 2rem;
+}
+
+.comments-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6A1B9A;
+  margin-bottom: 0.5rem;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment {
+  margin-bottom: 0.75rem;
+}
+
+.bubble {
+  background-color: #FCE4EC;
+  border: 2px solid #F48FB1;
+  border-radius: 12px;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.bubble.reply {
+  margin-left: 1.5rem;
+}
+
+.comment-author {
+  font-weight: 600;
+  color: #4A148C;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.owner-bubble {
+  background-color: #F3E5F5;
+  border-color: #CE93D8;
+}
+
+.owner-label {
+  background: #7B1FA2;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 0.3rem;
+}
+
+.comment-date-reply {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-reply-link a {
+  color: #AD1457;
+  text-decoration: underline;
+}
+
+.comment-form > p.logged-in-as,
+.comment-form > p.form-allowed-tags,
+.comment-form > .comment-notes {
+  display: none !important;
+}
+
+form.comment-form #comment {
+  display: none;
+}
+
+md-filled-text-field#mdComment {
+  display: block;
+  margin-bottom: 1rem;
+  --md-filled-text-field-container-color: #FCE4EC;
+  --md-filled-text-field-focus-outline-color: #EC407A;
+}
+
+md-filled-button#mdSubmit {
+  --md-sys-color-primary: #AD1457;
+  color: #FFF;
+  margin-bottom: 15px;
+}
+
+.italic-message {
+  font-style: italic;
+  color: #666;
+}
+
+.italic-message-login {
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.submit-button {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .app-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .app-info-text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FCE4EC;
+  font-family: 'Roboto', sans-serif;
+}
+
+.users-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.users-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.users-header h1 {
+  font-size: 1.8rem;
+  color: #4A148C;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+md-outlined-text-field#userSearch {
+  width: 300px;
+  --md-outlined-text-field-container-color: #FCE4EC;
+  --md-outlined-text-field-focus-outline-color: #EC407A;
+}
+
+md-outlined-text-field#userSearch .fa-search {
+  font-size: 1rem;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  gap: 1rem;
+}
+
+.user-card {
+  background-color: #FFEBEE;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-3px);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.5rem;
+  background-color: #FCE4EC;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4A148C;
+  margin-bottom: 0.25rem;
+}
+
+.uploaded-count {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.no-users {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 2rem;
+}

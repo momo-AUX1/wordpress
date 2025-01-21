@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FCE4EC; 
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.user-avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: #FCE4EC;
+}
+
+.profile-username {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4A148C;
+  margin-bottom: 2rem;
+}
+
+.apps-section-title {
+  font-size: 1.2rem;
+  color: #880E4F;
+  margin-bottom: 1rem;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+md-outlined-card.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFEBEE;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  --md-sys-color-outline: #F48FB1;
+}
+
+md-outlined-card.app-card:hover {
+  transform: translateY(-2px);
+}
+
+.app-icon {
+  width: 64px; 
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  background-color: #FCE4EC;
+}
+
+.app-title {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #4A148C;
+}
+
+.lang-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #F48FB1;
+  color: #880E4F;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.no-apps {
+  font-style: italic;
+  color: #666;
+  margin-top: 2rem;
+}

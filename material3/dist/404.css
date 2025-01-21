@@ -1,0 +1,63 @@
+
+
+.error-page-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FCE4EC; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.error-card {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.error-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #C2185B; 
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 2rem;
+}
+
+.go-back-button {
+  background-color: #C2185B;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.go-back-button:hover {
+  background-color: #AD1457; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.go-back-button:active {
+  background-color: #880E4F; 
+}

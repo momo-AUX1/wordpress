@@ -1,0 +1,134 @@
+body {
+  margin: 0; 
+  padding: 0;
+  background-color: #FCE4EC;
+  font-family: 'Roboto', sans-serif;
+}
+
+.appmage-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.appmage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.appmage-header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4A148C;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+md-filled-button#sortAZ {
+  --md-sys-color-primary: #C2185B;
+  color: #FFF;
+}
+
+md-filled-button#openLangDialog {
+  --md-sys-color-primary: #AD1457;
+  color: #FFF;
+}
+
+.apps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+md-outlined-card.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFEBEE;      
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  --md-sys-color-outline: #F48FB1;
+}
+
+md-outlined-card.app-card:hover {
+  transform: translateY(-2px);
+}
+
+.app-icon {
+  width: 64px; 
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.app-title {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #4A148C;
+}
+
+.lang-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #F48FB1;
+  color: #880E4F;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.loading-overlay {
+  display: none;
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.loading-overlay md-circular-progress {
+  --md-circular-progress-size: 48px;
+  --md-circular-progress-active-indicator-width: 8;
+  --md-circular-progress-color: #EC407A; 
+}
+
+.bottom-spacing {
+  height: 70px;
+}
+
+md-dialog#langDialog.custom-dialog {
+  --md-dialog-container-color: #fff;
+}
+
+.lang-radio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.lang-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-radio-label .fa-check-circle {
+  color: #EC407A;
+}
