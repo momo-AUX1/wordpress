@@ -20,7 +20,7 @@ get_header(); ?>
 
   <section class="appmage-container">
     <p class="app-description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+AppMage est une application de gestion logicielle inspirée par le Google Play Store, utilisant le design Material Design 3 (Material3) pour offrir une expérience utilisateur moderne et intuitive.
     </p>
 
     <h2 class="section-title">Recent Apps</h2>
